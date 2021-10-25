@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#62b4e7, #3f3f3f7a); /*Degradado*/
+}
+
+.container1 {
+  margin: 50px auto;
+  width: 300px;
+  padding: 30px;
+  background: rgb(248, 247, 247);
+  border-radius: 10px; /*Redondear esquinas*/
+  border: 1px solid black;
+}
+
+.container1 h2 {
+  text-align: center;
+  color: rgb(100, 59, 59);
+  font-family: "Courier New", Courier, monospace;
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+}
+
+.container .elemento button {
+  margin: auto;
+}
+.container i {
+  place-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.large material-icons {
+  background-color: yellow;
+
+  /* IMPORTANTE */
+  width: 200px;
+  margin: 0 auto;
+}

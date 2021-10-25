@@ -1,0 +1,24 @@
+.buscador {
+    display: flex;
+    label {
+        font-family: 'Oswald', sans-serif;
+        margin-top:3px;
+    }
+    &__input {
+        margin-left: 5px;
+        padding:5px 10px;
+    }
+    &__button {
+        background: red;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        padding: 0 10px;
+        &:hover {
+            background: #680747;
+        }
+        svg {
+            color: white;
+        }
+    }
+}
