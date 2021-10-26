@@ -9,7 +9,7 @@ import AuthRouter from "./AuthRouter";
 function App() {
   return (
     <Provider store={store}>
-      <AuthRouter />
+      <AppRouter />
     </Provider>
   );
 }
