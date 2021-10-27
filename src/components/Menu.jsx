@@ -4,7 +4,6 @@ import { Dropdown } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { logout } from "../actions/auth";
 import { Link } from "react-router-dom";
-import Productos from "./../containers/Productos";
 
 const Menu = () => {
   const dispatch = useDispatch();
@@ -17,7 +16,7 @@ const Menu = () => {
     <div className="menu" id="menu">
       <ul>
         <li>
-          <a href="/home/">Inicio</a>
+          <Link to="/home">Inicio</Link>
         </li>
         <Dropdown>
           <Dropdown.Toggle variant="light" id="dropdown-basic">
@@ -25,16 +24,21 @@ const Menu = () => {
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item href="#">Realizar Venta</Dropdown.Item>
-            <Dropdown.Item href="#">Buscar Ventas</Dropdown.Item>
-            <Dropdown.Item href="#">Actualizar Venta</Dropdown.Item>
+            <li>
+              <Link to="/cventa">Realizar Venta</Link>
+            </li>
+            <li>
+              <Link to="/rVentas">Buscar Ventas</Link>
+            </li>
+            <li>
+              <Link to="/uVenta">Actualizar Venta</Link>
+            </li>
           </Dropdown.Menu>
         </Dropdown>
         <li>
-          <a href="/productos">Productos</a>
+          <Link to="/productos">Productos</Link>
         </li>
 
-        <li>{/* <a href="/productos">Usuarios</a> */}</li>
         <li id="logout__button">
           <a onClick={handleLogout} href="/">
             Salir

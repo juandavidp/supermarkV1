@@ -7,7 +7,6 @@ const AuthRouter = () => {
   return (
     <Switch>
       <Route exact path="/" component={Login} />
-      <Redirect to="/" />
     </Switch>
   );
 };
